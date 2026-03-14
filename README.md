@@ -4,7 +4,7 @@
 ## Key Features
 
 * **Dual-End Authentication**: Implements keyed BLAKE3 hashing to verify the integrity of both input image frames and output decision signals.
-* **Anti-Replay Protection**: Incorporates a 10ms-threshold timestamp verification to ensure data freshness and defend against packet injection.
+* **Anti-Replay Protection**: Incorporates a timestamp verification to ensure data freshness and defend against packet injection.
 * **Resilient Design**: Includes a fallback mechanism that maintains detection continuity during single-frame verification failures.
 * **Security Circuit-Breaker**: A sliding-window monitor that automatically halts the system if it detects 2 consecutive failures or 3 failures within 5 frames.
 * **High Performance**: Leverages the speed of BLAKE3 to maintain near-real-time processing speeds suitable for embedded applications.
