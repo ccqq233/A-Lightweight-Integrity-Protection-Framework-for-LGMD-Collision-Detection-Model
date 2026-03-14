@@ -21,12 +21,6 @@ The framework compares two implementations:
 3.  **Output Verification**: The resulting spike signal is authenticated before being sent to the actuator.
 4.  **Halt Logic**: If verification fails repeatedly, the system triggers a "System Halted" state to prevent accidents.
 
-## Experimental Results
-
-Under simulated attacks (frame swapping and bit-flipping), the framework demonstrates:
-* **Attack Detection**: 100% detection of unauthorized data modifications.
-* **Robustness**: System remains operational during transient interference by using the last known-good state.
-* **Safety**: Immediate system shutdown during sustained attacks to prevent collision.
 
 ## Getting Started
 
