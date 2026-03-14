@@ -17,8 +17,8 @@ The framework compares two implementations:
 
 ### Security Workflow
 1.  **Input Verification**: Each frame is hashed with a secret key and timestamp before processing.
-2.  **LGMD Computation**: The model calculates membrane potential ($\kappa_f$) and spikes.
-3.  **Output Verification**: The resulting spike signal is authenticated before being sent to the actuator.
+2.  **LGMD Computation**: The model calculates membrane potential and spikes.
+3.  **Output Verification**: The resulting spike signal is verified before being sent to the actuator.
 4.  **Halt Logic**: If verification fails repeatedly, the system triggers a "System Halted" state to prevent accidents.
 
 
